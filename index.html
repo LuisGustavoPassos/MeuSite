@@ -1,10 +1,24 @@
 4<!doctype html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>meusite</title>
+    <meta name="theme-color" content="#f5efeb" />
+    <meta name="description" content="Portfólio de Luis Gustavo dos Passos, estudante de Engenharia de Software e desenvolvedor fullstack." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <script>
+      try {
+        const savedTheme = localStorage.getItem('luis-portfolio-theme')
+        const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches
+        document.documentElement.dataset.theme = savedTheme || (systemPrefersDark ? 'dark' : 'light')
+      } catch {
+        document.documentElement.dataset.theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+      }
+    </script>
+    <title>Luis Gustavo dos Passos — Portfólio</title>
   </head>
   <body>
     <div id="root"></div>
